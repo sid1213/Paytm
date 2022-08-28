@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/cb9a997e82.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pytmblue: '#00baf2',
+                        pytmlight: '#F0FBFF',
+                        pytmdblue: '#0f4a8a',
+                        white: '#fff',
+                        lightwhite: '#F5F7FA',
+                        secwhite: '#F5F5F5',
+                        hoverbg: '#00afe3',
+                        hoverbg2: '#0d3e80',
+
+                    },
+                }
+            },
+            fontSize: {
+                'xxs': '.60rem',
+            }
+        }
+    </script>
+    <title>Paytym Clone</title>
+</head>
+
+<body>
+
+    <!-- navbar start  -->
+
+    <div class="w-full shadow-xl">
+        <div class="relative w-full xl:container bg-myred mx-auto p-3 flex justify-between items-center px-5 py-3">
+
+            <div class="nav-log w-32 lg:w-48 flex justify-center items-center">
+                <div class="mob-menudiv block md:hidden mx-7 w-10">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/category/5165/paytm_logo.png" alt=""
+                    class="nav-logo w-full ">
+            </div>
+            <div class="nav-menus">
+                <ul class=" hidden md:flex space-x-3 lg:space-x-6">
+                    <li class="menu-item font-bold lg:text-base text-sm   hover:underline hover:underline-offset-8">
+                        Paytm For customers</li>
+                    <li class="menu-item font-bold lg:text-base text-sm ">Paytm For Business</li>
+                    <li class="menu-item font-bold lg:text-base text-sm ">Company</li>
+                    <li class="menu-item font-bold lg:text-base text-sm ">Investor Relations</li>
+                    <li class="menu-item font-bold lg:text-base text-sm ">Carrer</li>
+                </ul>
+            </div>
+
+            <div
+                class="sigbnin-btndiv relative bg-pytmblue  hidden md:block  py-2 w-28 md:w-20 lg:w-28 pl-3 pr-1 rounded-full text-white-500">
+                <div class="signin-btn text-white font-bold text-sm lg:text-base flex justify-between items-center">
+                    <div class="absolutute">SignIn</div>
+                    <div class="user-icon"><img src="https://assetscdn1.paytm.com/frontendcommonweb/9fd9626b.svg"
+                            alt=""></div>
+
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="sec-navbardiv bg-secwhite py-3 px-5">
+        <div class="navbar-text flex justify-center text-xs md:text-base text-center items-center hidden md:block ">
+            <span class="font-bold"> No Wallet KYC Required</span>
+            <span class="text-xl px-2">😊</span>
+            to pay using UPI on Paytm.
+            <span class="font-bold"> Learn more.</span>
+        </div>
+
+        <div class="navbar-text flex justify-center text-xxs md:text-base items-center md:hidden">
+            No Wallet KYC Required 😊 to pay using UPI on Paytm. Learn more.
+        </div>
+    </div>
+
+    <div class="w-full  py-28 px-5">
+        <div
+            class="container w-full lg:w-10/12 h-full lg:h-4/5 mx-auto flex-col-reverse md:flex-row  flex justify-start items-center reletive">
+            <div class="left-herodiv w-full md:w-1/2 flex justify-center items-center ">
+                <div class="hero-left-div py-2 md:py-0">
+                    <div class="paytm-imgdiv w-20 mb-20 shadow-shadow1 rounded hidden md:block">
+                        <img class="w-full shadow-shadow1 rounded"
+                            src="https://assetscdn1.paytm.com/images/catalog/view/310944/1654517453942.png" alt="">
+                    </div>
+                    <h1 class="patm-main-title font-bold text-4xl text-center md:text-left md:text-4xl lg:text-6xl">
+                        India's Most-Loved <br> Payments App
+                    </h1>
+                    <p
+                        class="paytm-hero-disc pt-2.5 font-bold text-center md:text-left text-base lg:text-lg leading-8 mb-10">
+                        Recharge & pay bills, book flights & movie tickets, open a savings account, invest in
+                        stocks &
+                        mutual funds, and do a lot more.
+                    </p>
+                    <div class="download-app-btn  text-white flex justify-center items-center md:justify-start ">
+                        <button
+                            class="app-downlaod bg-black py-3 px-5 rounded-full hover:text-black hover:bg-white hover:border-black border">Download
+                            Paytm App <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-google-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class=" hidden md:block w-[40%] right-0  absolute">
+                <div class="  ">
+                    <img class=" w-full object-fit-c"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1656568118664.png" alt="" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-pytmblue px-5">
+        <div class="hero-container lg:w-10/12 w-full mx-auto pt-16 pb-5 ">
+            <h2 class="text-2xl md:text-4xl font-bold text-white text-center md:text-left">Recharge & Pay Bills on
+                Paytm.</h2>
+
+            <div
+                class="paybills-carddiv py-4 flex  md:flex-nowrap md:justify-center items-center overflow-auto w-full justify-between ">
+                <div
+                    class="paybills-card md:min-w-0 min-w-[200px] w-48 md:w-40 lg:w-48 py-10 hover:bg-hoverbg rounded-lg">
+                    <div class="card-imgdiv md:w-12 lg:w-16 w-16 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="">
+                    </div>
+                    <div class="card-title text-base md:text-sm lg:text-lg text-white font-bold text-center pt-3">
+                        Reacharge <br> Prepaid Bills
+                    </div>
+                </div>
+                <div
+                    class="paybills-card md:min-w-0 min-w-[200px] w-48 md:w-40 lg:w-48 py-10 hover:bg-hoverbg rounded-lg">
+                    <div class="card-imgdiv md:w-12 lg:w-16 w-16 mx-auto">
+                        <img class="w-full"
+                            src="	https://assetscdn1.paytm.com/images/catalog/view_item/733300/1626778824903.png"
+                            alt="">
+                    </div>
+                    <div class="card-title text-base md:text-sm lg:text-lg text-white font-bold text-center pt-3">
+                        Pay <br> Rent payment
+                    </div>
+                </div>
+                <div
+                    class="paybills-card md:min-w-0 min-w-[200px] w-48 md:w-40 lg:w-48 py-10 hover:bg-hoverbg rounded-lg">
+                    <div class="card-imgdiv md:w-12 lg:w-16 w-16 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png" alt="">
+                    </div>
+                    <div class="card-title text-base md:text-sm lg:text-lg text-white font-bold text-center pt-3">
+                        Pay <br> Electricity Bill
+                    </div>
+                </div>
+                <div
+                    class="paybills-card md:min-w-0 min-w-[200px] w-48 md:w-40 lg:w-48 py-10 hover:bg-hoverbg rounded-lg">
+                    <div class="card-imgdiv md:w-12 lg:w-16 w-16 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png" alt="">
+                    </div>
+                    <div class="card-title text-base md:text-sm lg:text-lg text-white font-bold text-center pt-3">
+                        Reacharge <br> DTH Connection
+                    </div>
+                </div>
+
+                <div
+                    class="paybills-card md:min-w-0 min-w-[200px] w-48 md:w-40 lg:w-48 py-10 hover:bg-hoverbg rounded-lg">
+                    <div class="card-imgdiv md:w-12 lg:w-16 w-16 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png" alt="">
+                    </div>
+                    <div class="card-title text-base md:text-sm lg:text-lg text-white font-bold text-center pt-3">
+                        Book <br> Gas cylinder
+                    </div>
+                </div>
+                <div
+                    class="paybills-card md:min-w-0 min-w-[200px] w-48 md:w-40 lg:w-48 py-10 hover:bg-hoverbg rounded-lg">
+                    <div class="card-imgdiv md:w-12 lg:w-16 w-16 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/733304/1627454209116.png" alt="">
+                    </div>
+                    <div class="card-title text-base md:text-sm lg:text-lg text-white font-bold text-center pt-3">
+                        Pay <br> Credit Card Bill
+                    </div>
+                </div>
+                <div
+                    class="paybills-card md:min-w-0 min-w-[200px] w-48 md:w-40 lg:w-48 py-10 hover:bg-hoverbg rounded-lg">
+                    <div class="card-imgdiv md:w-12 lg:w-16 w-16 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/757701/1626268580682.png" alt="">
+                    </div>
+                    <div class="card-title text-base md:text-sm lg:text-lg text-white font-bold text-center pt-3">
+                        All <br> Payment Services
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w-full bg-pytmdblue px-5">
+        <div class="hero-container lg:w-10/12 w-full mx-auto pt-16 pb-5 ">
+            <h2 class="text-2xl md:text-4xl font-bold text-white text-center md:text-left">Book & Buy on Paytm.</h2>
+
+            <div
+                class="paybills-carddiv py-4 flex  md:flex-nowrap md:justify-center items-center overflow-auto w-full justify-between ">
+                <div
+                    class="paybills-card md:min-w-0 min-w-[200px] w-48 md:w-40 lg:w-48 py-10 hover:bg-hoverbg2 rounded-lg">
+                    <div class="card-imgdiv md:w-12 lg:w-16 w-16 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" alt="">
+                    </div>
+                    <div class="card-title text-base md:text-sm lg:text-lg text-white font-bold text-center pt-3">
+                        Movie <br> Tickets
+                    </div>
+                </div>
+                <div
+                    class="paybills-card md:min-w-0 min-w-[200px] w-48 md:w-40 lg:w-48 py-10 hover:bg-hoverbg2 rounded-lg">
+                    <div class="card-imgdiv md:w-12 lg:w-16 w-16 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/733296/1626259884425.png" alt="">
+                    </div>
+                    <div class="card-title text-base md:text-sm lg:text-lg text-white font-bold text-center pt-3">
+                        Flight <br> Tickets
+                    </div>
+                </div>
+                <div
+                    class="paybills-card md:min-w-0 min-w-[200px] w-48 md:w-40 lg:w-48 py-10 hover:bg-hoverbg2 rounded-lg">
+                    <div class="card-imgdiv md:w-12 lg:w-16 w-16 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/729996/1626260477699.png" alt="">
+                    </div>
+                    <div class="card-title text-base md:text-sm lg:text-lg text-white font-bold text-center pt-3">
+                        Bus <br> Tickets
+                    </div>
+                </div>
+                <div
+                    class="paybills-card md:min-w-0 min-w-[200px] w-48 md:w-40 lg:w-48 py-10 hover:bg-hoverbg2 rounded-lg">
+                    <div class="card-imgdiv md:w-12 lg:w-16 w-16 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/729997/1626260495975.png" alt="">
+                    </div>
+                    <div class="card-title text-base md:text-sm lg:text-lg text-white font-bold text-center pt-3">
+                        Train <br> Tickets
+                    </div>
+                </div>
+
+                <div
+                    class="paybills-card md:min-w-0 min-w-[200px] w-48 md:w-40 lg:w-48 py-10 hover:bg-hoverbg2 rounded-lg">
+                    <div class="card-imgdiv md:w-12 lg:w-16 w-16 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/729998/1626259953707.png" alt="">
+                    </div>
+                    <div class="card-title text-base md:text-sm lg:text-lg text-white font-bold text-center pt-3">
+                        Car & <br> Bikes
+                    </div>
+                </div>
+                <div
+                    class="paybills-card md:min-w-0 min-w-[200px] w-48 md:w-40 lg:w-48 py-10 hover:bg-hoverbg2 rounded-lg">
+                    <div class="card-imgdiv md:w-12 lg:w-16 w-16 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/729999/1626259968563.png" alt="">
+                    </div>
+                    <div class="card-title text-base md:text-sm lg:text-lg text-white font-bold text-center pt-3">
+                        International <br> Flights
+                    </div>
+                </div>
+                <div
+                    class="paybills-card md:min-w-0 min-w-[200px] w-48 md:w-40 lg:w-48 py-10 hover:bg-hoverbg2 rounded-lg">
+                    <div class="card-imgdiv md:w-12 lg:w-16 w-16 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/730001/1626450848003.png" alt="">
+                    </div>
+                    <div class="card-title text-base md:text-sm lg:text-lg text-white font-bold text-center pt-3">
+                        Invest <br> in Stocks
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w-full bg-lightwhite px-5">
+        <div class="w-full md:w-9/12 mx-auto pt-16">
+            <h2 class="text-2xl md:text-5xl font-bold text-black text-center md:text-left mb-5">Paytm Payment
+                Instruments.</h2>
+
+            <div
+                class="fastest-way flex flex-wrap md:flex-nowrap bg-white md:pt-20 md:pb-20 md:pr-14 md:pl-28 mx-1 my-10">
+                <div class="w-full md:w-1/2 w-full md:w-1/2 p-10 md:p-0">
+                    <div
+                        class="paytm-imgdiv w-48 md:w-24 mb-10 md:mb-20 flex justify-center items-center  rounded-lg  from-transparent">
+                        <img class="w-24  rounded-lg pr-5"
+                            src="https://assetscdn1.paytm.com/images/catalog/view/307185/1617861564011.png" alt="">
+                        <div class="font-bold text-base w-48 md:w-24">Paytm Wallet</div>
+                    </div>
+                    <h1 class="text-left patm-main-title font-bold text-2xl md:text-left md:text-4xl   ">
+                        The Fastest Way to <br> Apy In-Store & Online
+                    </h1>
+                    <p
+                        class="paytm-hero-disc pt-2.5 font-bold-500 text-left md:text-left text-base md:text-base lg:text-lg leading-8 my-10">
+                        Load up your Paytm Wallet for free and make payment in a jiffy at over 21 million stores,
+                        websites and apps.
+                    </p>
+                    <div class="download-app-btn  text-white flex  items-center justify-start  ">
+                        <button
+                            class="app-downlaod bg-black py-3 px-5 rounded-full hover:text-black hover:bg-white hover:border-black border">Download
+                            Paytm App <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-google-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 p-10 md:p-0">
+                    <div class="fastest-right-imgdiv w-300 md:w-540">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/728701/1618577020961.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="fastest-way flex flex-wrap md:flex-nowrap bg-white md:pt-20 md:pb-20 md:pr-14 md:pl-28 mx-1 my-10">
+                <div class="w-full md:w-1/2 w-full md:w-1/2 p-10 md:p-0">
+                    <div
+                        class="paytm-imgdiv w-48 md:w-24 mb-10 md:mb-20 flex justify-center items-center  rounded-lg  from-transparent">
+                        <img class="w-24  rounded-lg pr-5"
+                            src="https://assetscdn1.paytm.com/images/catalog/view/307186/1615957674521.png" alt="">
+                        <div class="font-bold text-base w-48 md:w-24">UPI Money Transfer</div>
+                    </div>
+                    <h1 class="text-left patm-main-title font-bold text-2xl md:text-left md:text-4xl ">
+                        Pay anyone directly from your bank account.
+                    </h1>
+                    <p
+                        class="paytm-hero-disc pt-2.5 font-bold-500 text-left md:text-left text-base md:text-base lg:text-lg leading-8 my-10">
+                        Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm
+                        Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.
+                    </p>
+                    <div class="download-app-btn  text-white flex  items-center justify-start  ">
+                        <button
+                            class="app-downlaod bg-black py-3 px-5 rounded-full hover:text-black hover:bg-white hover:border-black border">Download
+                            Paytm App <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-google-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 p-10 md:p-0">
+                    <div class="fastest-right-imgdiv w-300 md:w-540">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/728702/1626342071104.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="fastest-way flex flex-wrap md:flex-nowrap bg-white md:pt-20 md:pb-20 md:pr-14 md:pl-28 mx-1 my-10">
+                <div class="w-full md:w-1/2 w-full md:w-1/2 p-10 md:p-0">
+                    <div
+                        class="paytm-imgdiv w-48 md:w-24 mb-10 md:mb-20 flex justify-center items-center  rounded-lg  from-transparent">
+                        <img class="w-full  rounded-lg pr-5"
+                            src="https://assetscdn1.paytm.com/images/catalog/view/307191/1613622537678.png" alt="">
+                        <!-- <div class="font-bold text-base">Paytm Wallet</div> -->
+                    </div>
+                    <h1 class="text-left patm-main-title font-bold text-2xl md:text-left md:text-4xl  ">
+                        Want it? <br>
+                        No more waiting for it.
+                    </h1>
+                    <p
+                        class="paytm-hero-disc pt-2.5 font-bold-500 text-left md:text-left text-base md:text-base lg:text-lg leading-8 my-10">
+                        With Paytm Postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things you
+                        want today and pay for them next month.
+                    </p>
+                    <div class="download-app-btn  text-white flex  items-center justify-start  ">
+                        <button
+                            class="app-downlaod bg-black py-3 px-5 rounded-full hover:text-black hover:bg-white hover:border-black border">Download
+                            Paytm App <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-google-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 p-10 md:p-0">
+                    <div class="fastest-right-imgdiv w-300 md:w-540">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/850764/1626077030984.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bank-offers-w-full pb-20">
+                <div class="flex flex-wrap md:flex-nowrap gap-x-10 ">
+                    <div class="md:w-1/2 bg-white  px-16 pt-18">
+                        <div class="paytm-imgdiv w-64 md:w-64 mb-10 flex justify-center items-center  ">
+                            <img class="w-full  "
+                                src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640242865113.png"
+                                alt="">
+
+                        </div>
+                        <h1 class="text-left patm-main-title font-bold text-2xl md:text-left md:text-4xl  ">
+                            Unlimited Cashback Every Time
+                        </h1>
+                        <p
+                            class="paytm-hero-disc pt-2.5 font-bold-500 text-left md:text-left text-base md:text-base lg:text-lg leading-8 my-10">
+                            Paytm HDFC Bank Select Credit Card. A card with assured Cashback and incredible offers.
+                        </p>
+                        <div class="card-img-bottomdiv">
+                            <img src="	https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640241561388.png"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="md:w-1/2 bg-white rounded  px-16 pt-16 ">
+                        <div class="paytm-imgdiv w-64 md:w-64 mb-10 flex justify-center items-center  ">
+                            <img class="w-full  "
+                                src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1640242163727.png"
+                                alt="">
+                            <!-- <div class="font-bold text-base">Paytm Wallet</div> -->
+                        </div>
+                        <h1 class="text-left patm-main-title font-bold text-2xl md:text-left md:text-4xl  ">
+                            Unlimited Cashback Every Time
+                        </h1>
+                        <p
+                            class="paytm-hero-disc pt-2.5 font-bold-500 text-left md:text-left text-base md:text-base lg:text-lg leading-8 my-10">
+                            Paytm HDFC Bank Select Credit Card. A card with assured Cashback and incredible offers.
+                        </p>
+                        <div class="card-img-bottomdiv ">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1626079147084.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-white px-5">
+        <div class="w-full md:w-9/12 mx-auto pt-16">
+            <h2 class="text-2xl md:text-5xl font-bold text-black text-center md:text-left mb-5">Financial Services by
+                Paytm</h2>
+
+            <div class="flex justify-center items-center flex-wrap md:flex-nowrap gap-x-10">
+                <div class="w-full md:w-1/2 w-full md:w-1/2 p-10">
+                    <div class="paytm-imgdiv w-60 md:w-64 my-10 flex justify-center items-center  ">
+                        <img class="w-full  "
+                            src="https://assetscdn1.paytm.com/images/catalog/view/307193/1617696576778.png" alt="">
+
+                    </div>
+                    <h1 class="text-left patm-main-title font-bold text-2xl md:text-left md:text-4xl md:pr-16  ">
+                        India's most sincere bank.
+                    </h1>
+                    <p
+                        class="paytm-hero-disc pt-2.5 font-bold-500 text-left md:text-left text-base md:text-base lg:text-lg leading-8 my-10">
+                        Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With
+                        instant account opening, virtual debit card and zero balance requirements, experience the future
+                        of banking today.
+                    </p>
+                    <div class="download-app-btn  text-white flex  items-center justify-start  ">
+                        <button class="app-downlaod bg-pytmdblue py-3 px-5 rounded-lg text-xl mr-1 ">Learn More <i
+                            class="fa-solid fa-angle-right"></i> </i>
+                    </button>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 p-10 md:p-0 flex justify-center items-center">
+                    <div class="fastest-right-imgdiv w-300 md:w-96 ">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/728826/1626076427497.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-lightwhite relative bg-[url('./assets/69678bc5')]">
+        <div class="w-full md:w-9/12 mx-auto pt-16">
+
+            <div class="flex justify-center items-center flex-wrap md:flex-nowrap gap-x-10 z-10">
+                <div class="w-full md:w-1/2 p-10 md:p-0">
+                    <div class="fastest-right-imgdiv w-300 md:w-96 z-10">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/788781/1626077377376.png" alt="">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 w-full md:w-1/2 p-10">
+                    <div class="paytm-imgdiv w-60 md:w-64 my-10 flex justify-center items-center  ">
+                        <img class="w-full  "
+                            src="https://assetscdn1.paytm.com/images/catalog/view/308774/1617696247991.png" alt="">
+
+                    </div>
+                    <h1 class="text-left patm-main-title font-bold text-2xl md:text-left md:text-4xl md:pr-16  ">
+                        Build Long-term Wealth & Achieve your Goals.
+                    </h1>
+                    <p
+                        class="paytm-hero-disc pt-2.5 font-bold-500 text-left md:text-left text-base md:text-base lg:text-lg leading-8 my-10">
+                        Investing on Paytm Money is transparent, low-cost and commission-free. Buy stocks & mutual funds
+                        that can help you create wealth & realise your dreams.
+                    </p>
+                    <div class="download-app-btn  text-white flex  items-center justify-start  ">
+                        <button class="app-downlaod bg-pytmdblue py-3 px-5 rounded-lg text-xl mr-1 ">Learn More <i
+                            class="fa-solid fa-angle-right"></i> </i>
+                    </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="w-full bg-white px-5">
+        <div class="w-full md:w-9/12 mx-auto pt-16">
+
+            <div class="flex justify-center items-center flex-wrap md:flex-nowrap gap-x-10">
+                <div class="w-full md:w-1/2 w-full md:w-1/2 p-10">
+                    <div class="paytm-imgdiv w-60 md:w-64 my-10 flex justify-center items-center  ">
+                        <img class="w-full  "
+                            src="https://assetscdn1.paytm.com/images/catalog/view/308775/1653901470333.jpeg" alt="">
+
+                    </div>
+                    <h1 class="text-left patm-main-title font-bold text-2xl md:text-left md:text-4xl md:pr-16  ">
+                        Insurance made easy.
+                    </h1>
+                    <p
+                        class="paytm-hero-disc pt-2.5 font-bold-500 text-left md:text-left text-base md:text-base lg:text-lg leading-8 my-10">
+                        Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance
+                        removes the worry of getting insured by making it simple, convenient & easy-to-understand.
+                    </p>
+                    <div class="download-app-btn  text-white flex  items-center justify-start  ">
+                        <button class="app-downlaod bg-pytmdblue py-3 px-5 rounded-lg text-xl mr-1 ">Learn More <i
+                            class="fa-solid fa-angle-right"></i> </i>
+                    </button>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 p-10 md:p-0 flex justify-center items-center">
+                    <div class="fastest-right-imgdiv w-300 md:w-96 ">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/788790/1653913927257.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-lightwhite relative">
+        <div class="w-full md:w-9/12 mx-auto pt-16">
+
+            <div class="flex justify-center items-center flex-wrap md:flex-nowrap gap-x-10 z-10">
+                <div class="w-full md:w-1/2 p-10 md:p-0">
+                    <div class="fastest-right-imgdiv w-300 md:w-96 z-10">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/850765/1655987252365.png" alt="">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 w-full md:w-1/2 p-10">
+                    <div class="paytm-imgdiv w-60 md:w-64 my-10 flex justify-center items-center  ">
+                        <img class="w-full  "
+                            src="https://assetscdn1.paytm.com/images/catalog/view/308777/1617695287770.png" alt="">
+
+                    </div>
+                    <h1 class="text-left patm-main-title font-bold text-2xl md:text-left md:text-4xl md:pr-16  ">
+                        Get a Personal Loan in 2 Minutes.
+                    </h1>
+                    <p
+                        class="paytm-hero-disc pt-2.5 font-bold-500 text-left md:text-left text-base md:text-base lg:text-lg leading-8 my-10">
+                        Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% digital, transparent
+                        and paperless.
+                    </p>
+                    <div class="download-app-btn  text-white flex  items-center justify-start  ">
+                        <button class="app-downlaod bg-pytmdblue py-3 px-5 rounded-lg text-xl mr-1 ">Learn More <i
+                            class="fa-solid fa-angle-right"></i> </i>
+                    </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <img src="https://assetscdn1.paytm.com/frontendcommonweb/69678bc5.png" alt="background" class="absolute h-screen w-full top-0 left-0 right-0"> -->
+        </div>
+    </div>
+
+    <div class="w-full bg-white px-5">
+        <div class="w-full md:w-9/12 mx-auto pt-16">
+            <h2 class="text-2xl md:text-5xl font-bold text-black text-center md:text-left mb-5">Business Services by
+                Paytm</h2>
+
+            <div class="flex justify-center items-center bg-lightwhite flex-wrap md:flex-nowrap  my-10 gap-x-10">
+                <div class="w-full md:w-1/2 w-full md:w-1/2 p-10">
+
+                    <h1 class="text-left patm-main-title font-bold text-2xl md:text-left md:text-4xl md:pr-16  ">
+                        Accept payments online with ease
+                    </h1>
+                    <p
+                        class="paytm-hero-disc pt-2.5 font-bold-500 text-left md:text-left text-base md:text-base lg:text-lg leading-8 my-4">
+                        Grow your business with the payment gateway that powers India’s largest brands and even the
+                        Paytm App
+                    </p>
+                    <div class="download-app-btn  text-white flex  items-center justify-start  ">
+                        <button class="app-downlaod bg-pytmdblue py-3 px-5 rounded-lg text-xl mr-1 ">Learn More <i
+                            class="fa-solid fa-angle-right"></i> </i>
+                    </button>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 py-10 flex justify-center md:justify-end items-center">
+                    <div class="fastest-right-imgdiv w-80 md:w-96 ">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/853877/1626077000254.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center bg-lightwhite flex-wrap md:flex-nowrap  my-10 gap-x-10">
+                <div class="w-full md:w-1/2 w-full md:w-1/2 p-10">
+
+                    <h1 class="text-left patm-main-title font-bold text-2xl md:text-left md:text-4xl md:pr-16  ">
+                        In-shop payments powered by Paytm.
+                    </h1>
+                    <p
+                        class="paytm-hero-disc pt-2.5 font-bold-500 text-left md:text-left text-base md:text-base lg:text-lg leading-8 my-4">
+                        Millions of small & big businesses use Paytm to accept payments anywhere any time with a wide
+                        range of solutions for all kind of merchants
+                    </p>
+                    <div class="download-app-btn  text-white flex  items-center justify-start  ">
+                        <button class="app-downlaod bg-pytmdblue py-3 px-5 rounded-lg text-xl mr-1 ">Learn More <i
+                            class="fa-solid fa-angle-right"></i> </i>
+                    </button>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 py-10 flex justify-center md:justify-end items-center">
+                    <div class="fastest-right-imgdiv w-80 md:w-96 ">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/853880/1656675942486.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg- px-5">
+        <div class="w-full md:w-9/12 mx-auto pt-16">
+            <h2 class="text-2xl md:text-5xl font-bold text-black text-center md:text-left mb-5">Business Tools to help
+                your business grow</h2>
+
+
+            <div
+                class="paybills-carddiv py-4 flex flex-wrap p-5 md:p-2  md:flex-nowrap md:justify-between items-center  w-full justify-between  ">
+                <div class="paybills-card  w-full    md:w-40 lg:w-56 py-10 ">
+                    <div class="card-imgdiv md:w-32 lg:w-48 w-48 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/854033/1626081565192.png" alt="">
+                    </div>
+                    <div
+                        class="card-title font-black text-base md:text-xl pt-10 pb-5 lg:text-xl text-black font-bold-900 text-center md:text-left pt-3">
+                        POS Billing
+                        Software
+                    </div>
+                    <p class="my-4 text-black text-lg font-bold-500">Say Hello to Smart Retail Business Management</p>
+                    <div class="buttoon-div">
+                        <button class="text-sm font-bold">Learn More</button>
+                    </div>
+                </div>
+                <div class="paybills-card  w-full    md:w-40 lg:w-56 py-10 ">
+                    <div class="card-imgdiv md:w-32 lg:w-48 w-48 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/854035/1626081071077.png" alt="">
+                    </div>
+                    <div
+                        class="card-title font-black text-base md:text-xl pt-10 pb-5 lg:text-xl text-black font-bold-900 text-center md:text-left pt-3">
+                        Paytm for
+                        Business App
+                    </div>
+                    <p class="my-4 text-black text-lg font-bold-500">Everything you need to manage your business on your
+                        phone
+                    </p>
+                    <div class="buttoon-div">
+                        <button class="text-sm font-bold">Learn More</button>
+                    </div>
+                </div>
+                <div class="paybills-card  w-full   md:w-40 lg:w-56 py-10 ">
+                    <div class="card-imgdiv md:w-32 lg:w-48 w-48 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/854036/1656568216166.png" alt="">
+                    </div>
+                    <div
+                        class="card-title font-black text-base md:text-xl pt-10 pb-5 lg:text-xl text-black font-bold-900 text-center md:text-left pt-3">
+                        Advertise on
+                        Paytm
+                    </div>
+                    <p class="my-4 text-black text-lg font-bold-500">SGrow your business by advertising on India’s
+                        largest
+                        mobile business</p>
+                    <div class="buttoon-div">
+                        <button class="text-sm font-bold">Learn More</button>
+                    </div>
+                </div>
+                <div class="paybills-card  w-full   md:w-40 lg:w-56 py-10 ">
+                    <div class="card-imgdiv md:w-32 lg:w-48 w-48 mx-auto">
+                        <img class="w-full"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/854038/1626081814411.png" alt="">
+                    </div>
+                    <div
+                        class="card-title font-black text-base md:text-xl pt-10 pb-5 lg:text-xl text-black font-bold-900 text-center md:text-left pt-3">
+                        Business
+                        Khata
+                    </div>
+                    <p class="my-4 text-black text-lg font-bold-500">Managing Khata made easy</p>
+                    <div class="buttoon-div">
+                        <button class="text-sm font-bold">Learn More</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="w-full bg-pytmlight px-5">
+        <div class="w-full md:w-9/12 mx-auto py-16">
+            <div
+                class="bg-white flex items-center flex-wrap lg:flex-nowrap items-center p-2 md:py-16 md:px-16 rounded-lg">
+                <div class="w-52 flex flex-col justify-between ">
+                    <div class="light-imgdiv w-32">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view/307196/1626420555412.png" alt="">
+                    </div>
+                    <div class="mt-14">
+                        <p class="font-base">Get started on wealth creation journey with Zero brokerage fee & no hidden
+                            charges.</p>
+                        <div class="pt-5 text-pytmblue">Learn More</div>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-around md:justify-between  flex-wrap md:flex-nowrap w-full gap-y-2 md:gap-y-0">
+
+                    <div class="light-cardsdiv bg-pytmblue  w-40 h-64 rounded-lg">
+                        <div class="light-card-img p-2">
+                            <img src="	https://assetscdn1.paytm.com/images/catalog/view_item/728895/1618575899205.png"
+                                alt="">
+                        </div>
+                        <div
+                            class="light-card-title w-28 py-5 flex justify-center mx-auto text-center font-bold text-white text-lg">
+                            Apply For IPO
+                        </div>
+                    </div>
+
+                    <div class="light-cardsdiv bg-pytmblue  w-40 h-64 rounded-lg">
+                        <div class="light-card-img p-2">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728894/1618576143299.png"
+                                alt="">
+                        </div>
+                        <div
+                            class="light-card-title w-28 py-5 flex justify-center mx-auto text-center font-bold text-white text-lg">
+                            Invest in Stocks
+                        </div>
+                    </div>
+
+                    <div class="light-cardsdiv bg-pytmblue  w-40 h-64 rounded-lg">
+                        <div class="light-card-img p-2">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/800760/1618831809222.png"
+                                alt="">
+                        </div>
+                        <div
+                            class="light-card-title w-28 py-5 flex justify-center mx-auto text-center font-bold text-white text-lg">
+                            Invest in ETFs
+                        </div>
+                    </div>
+                    <div class="light-cardsdiv bg-pytmblue  w-40 h-64 rounded-lg">
+                        <div class="light-card-img p-2">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728896/1618575990183.png"
+                                alt="">
+                        </div>
+                        <div
+                            class="light-card-title w-28 py-5 flex justify-center mx-auto text-center font-bold text-white text-lg">
+                            Buy gold
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+            <div
+                class="bg-white flex items-center mt-10 flex-wrap lg:flex-nowrap items-center p-2 md:py-16 md:px-16 rounded-lg">
+                <div class="w-52 flex flex-col justify-between ">
+                    <div class="light-imgdiv w-32">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view/307196/1626420555412.png" alt="">
+                    </div>
+                    <div class="mt-14">
+                        <p class="font-base">Get started on wealth creation journey with Zero brokerage fee & no hidden
+                            charges.</p>
+                        <div class="pt-5 text-pytmblue">Learn More</div>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-around md:justify-between  flex-wrap md:flex-nowrap w-full gap-y-2 md:gap-y-0">
+
+                    <div class="light-cardsdiv bg-pytmblue  w-40 h-64 rounded-lg">
+                        <div class="light-card-img p-2">
+                            <img src="	https://assetscdn1.paytm.com/images/catalog/view_item/728895/1618575899205.png"
+                                alt="">
+                        </div>
+                        <div
+                            class="light-card-title w-28 py-5 flex justify-center mx-auto text-center font-bold text-white text-lg">
+                            Apply For IPO
+                        </div>
+                    </div>
+
+                    <div class="light-cardsdiv bg-pytmblue  w-40 h-64 rounded-lg">
+                        <div class="light-card-img p-2">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728894/1618576143299.png"
+                                alt="">
+                        </div>
+                        <div
+                            class="light-card-title w-28 py-5 flex justify-center mx-auto text-center font-bold text-white text-lg">
+                            Invest in Stocks
+                        </div>
+                    </div>
+
+                    <div class="light-cardsdiv bg-pytmblue  w-40 h-64 rounded-lg">
+                        <div class="light-card-img p-2">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/800760/1618831809222.png"
+                                alt="">
+                        </div>
+                        <div
+                            class="light-card-title w-28 py-5 flex justify-center mx-auto text-center font-bold text-white text-lg">
+                            Invest in ETFs
+                        </div>
+                    </div>
+                    <div class="light-cardsdiv bg-pytmblue  w-40 h-64 rounded-lg">
+                        <div class="light-card-img p-2">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728896/1618575990183.png"
+                                alt="">
+                        </div>
+                        <div
+                            class="light-card-title w-28 py-5 flex justify-center mx-auto text-center font-bold text-white text-lg">
+                            Buy gold
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="bg-gray-100 px-5">
+            <div class="p-20 flex justify-between items-center flex-col sm:flex-row gap-10">
+                <div class="flex flex-col md:flex-row flex-wrap gap-4">
+                    <p class="text-xl font-bold">
+                        Download Paytm App<br>to Pay from anywhere
+                    </p>
+                    <a href="#"><img src="https://assetscdn1.paytm.com/frontendcommonweb/71229188.svg" alt="img" class="w-full"></a>
+                    <a href="#"><img src="https://assetscdn1.paytm.com/frontendcommonweb/33d9d7f1.svg" alt="img" class="w-full"></a>
+                </div>
+    
+                <div class="flex gap-10">
+                    <a href="#"><img src="https://assetscdn1.paytm.com/frontendcommonweb/508b83d1.svg" alt="twitter"></a>
+                    <a href="#"><img src="https://assetscdn1.paytm.com/frontendcommonweb/f9c15a7a.svg" alt="instagram"></a>
+                    <a href="#"><img src="https://assetscdn1.paytm.com/frontendcommonweb/ad9d15ee.svg" alt="facebook"></a>
+                </div>
+            </div>
+    
+            <div class="h-2 w-full bg-paytm-blue"></div>
+            <div class="h-2 w-full bg-paytm-bluedark"></div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
